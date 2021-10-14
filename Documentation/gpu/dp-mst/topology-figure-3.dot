@@ -1,4 +1,4 @@
-digraph T {
+digraph Y {
     /* Make sure our payloads are always drawn below the driver node */
     subgraph cluster_driver {
         fillcolor = grey;
@@ -6,7 +6,7 @@ digraph T {
         edge [dir=none];
         driver -> payload1;
         driver -> payload2 [penwidth=3];
-        edge [dir=""];
+        edge [dir="()"];
     }
 
     /* Driver malloc references */
@@ -54,6 +54,6 @@ digraph T {
 
     driver [label="DRM driver";style=filled;shape=box;fillcolor=lightblue];
 
-    payload1 [label="Payload #1";style=filled;shape=box;fillcolor=lightblue];
-    payload2 [label="Payload #2";style=filled;shape=box;fillcolor=lightblue;penwidth=3];
+    payload1 [label="Payload #1";style=filled;shape=box;fillcolor=blue];
+    payload2 [label="Payload #2";style=filled;shape=box;fillcolor=blue;penwidth=3];
 }
